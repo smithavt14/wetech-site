@@ -1,0 +1,15 @@
+body {
+    margin: 0;
+}
+
+.flex {
+    display: flex;
+}
+
+p {
+    margin: 0;
+}
+
+Link {
+    text-decoration: none;
+}

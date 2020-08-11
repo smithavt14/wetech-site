@@ -1,0 +1,73 @@
+@font-face {
+    font-family: 'Marker';
+    src: url('../../assets/fonts/PermanentMarker-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../../assets/fonts/OpenSans-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Lato Bold';
+    src: url('../../assets/fonts/Lato-Bold.ttf');
+}
+
+.banner {
+    height: calc(100vh - 96px - 80px);
+    margin-top: 80px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.infoContainer {
+    width: 55%;
+}
+
+h1 {
+    font-family: 'Marker';
+    color: #272343;
+    font-size: 3rem;
+    margin: 0;
+    margin-bottom: 40px;
+}
+
+p {
+    font-size: 1rem;
+    font-family: 'Open Sans';
+    color: #272343;
+}
+
+.link {
+    font-size: 1rem;
+    font-family: 'Open Sans';
+    color: white;
+    background: #6C63FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 32px;
+    height: 48px;
+    width: 200px;
+    border-radius: 4px;
+    /* Bounce Styles */
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    transition-duration: 0.25s;
+}
+.link:hover,
+.link:focus,
+.link:active {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+    -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+    transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+}
+
+.bannerImg {
+    width: 40%;
+    flex-shrink: 0;
+}

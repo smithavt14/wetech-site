@@ -1,0 +1,6 @@
+.page {
+    width: 100vw;
+    min-height:100vh;
+    background: url('../../assets/images/purple-dot-32.svg');
+    box-sizing: border-box;
+}

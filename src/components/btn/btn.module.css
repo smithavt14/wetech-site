@@ -1,0 +1,39 @@
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../../assets/fonts/OpenSans-Regular.ttf');
+}
+
+.btn {
+    font-size: 1rem;
+    font-family: 'Open Sans';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 32px;
+    border-radius: 4px;
+    /* Bounce Animation Styles */
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    transition-duration: 0.25s;
+}
+
+.btnPrimary {
+    color: white;
+    background: #6C63FF;
+}
+
+.btn-ghost {
+    color: #6C63FF;
+    border: 1px solid #6C63FF;
+}
+
+.btn:hover,
+.btn:focus,
+.btn:active {
+    cursor: pointer;
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+    -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+    transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+}
