@@ -2,7 +2,6 @@ import React from "react";
 import style from './banner.module.css';
 import BannerVector from "../../assets/vectors/banner-img.svg";
 import Button from "../btn/btn";
-import { Link } from "gatsby";
 
 export default function Banner() {
     return (
@@ -24,7 +23,7 @@ export default function Banner() {
                 data-sal-duration="900" 
                 data-sal-easing="ease"
                 style={{width: '40%', margin: '32px 0'}}>
-                    <a href="https://wetech188297.typeform.com/to/b0nuCjfo" target="_blank" style={{textDecoration: 'none'}}>
+                    <a href="https://wetech188297.typeform.com/to/b0nuCjfo" target="_blank" rel="noreferrer" style={{textDecoration: 'none'}}>
                         <Button content="Contact Us" type="primary"></Button>
                     </a>
                 </div>

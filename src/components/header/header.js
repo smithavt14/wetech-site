@@ -23,7 +23,7 @@ export default function Header() {
       <div className="flex">
         <Link className={Styles.link} to="/">ABOUT</Link>
         <Link className={Styles.link} to="/">PROJECTS</Link>
-        <a className={Styles.btnLink} href="https://wetech188297.typeform.com/to/b0nuCjfo" target="_blank">CONTACT</a>
+        <a className={Styles.btnLink} href="https://wetech188297.typeform.com/to/b0nuCjfo" target="_blank" rel="noreferrer">CONTACT</a>
       </div>
     </div>
   )
