@@ -14,8 +14,7 @@
 }
 
 .banner {
-    height: calc(100vh - 96px - 80px);
-    margin-top: 80px;
+    height: 110vh;
     box-sizing: border-box;
     display: flex;
     align-items: center;
@@ -24,20 +23,6 @@
 
 .infoContainer {
     width: 55%;
-}
-
-h1 {
-    font-family: 'Marker';
-    color: #272343;
-    font-size: 3rem;
-    margin: 0;
-    margin-bottom: 40px;
-}
-
-p {
-    font-size: 1rem;
-    font-family: 'Open Sans';
-    color: #272343;
 }
 
 .link {

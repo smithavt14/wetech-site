@@ -1,0 +1,81 @@
+.bannerContainer {
+    box-sizing: border-box;
+}
+
+.bannerContainer {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 80%, #FFFFFF 100%), url('../assets/images/purple-dot-32.svg');
+    min-height: 110vh;
+}
+
+.logoContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 120px 0;
+}
+
+.container {
+    padding: 0 80px;
+    max-width: 1440px;
+}
+
+.sectionContainer {
+    background: linear-gradient(180deg, rgba(227, 246, 245, 0.25) 0%, rgba(227, 246, 245, 0) 100%);
+    position: relative;
+    min-height: 100vh;
+    padding: 80px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.sectionContainer h2 {
+    margin-bottom: 32px;
+}
+
+.purpleAccent {
+    position: absolute;
+    top: 0;
+    right: -32px;
+}
+
+.servicesContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 16px;
+    padding: 16px;
+    margin-top: 32px;
+}
+
+.serviceContainer {
+    height: 240px;
+    flex-grow: 1;
+    padding: 32px;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+.serviceFlex {
+    display: flex;
+    height: 32px;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.serviceContainer h3 {
+    margin: 0;
+    margin-left: 32px;
+}
+
+.serviceIcon {
+    width: 32px;
+}
+
+.servicesContainer p {
+    margin-left: 64px;
+    opacity: 80%;
+}
+
+.creationSVG {
+    height: 480px;
+    width: auto;
+}

@@ -17,10 +17,11 @@
     padding: 8px 32px;
     max-width: 1440px;
     /* Position */
-    position: sticky;
+    position: fixed;
     top: 16px;
-    margin: 0 auto;
-    /* look */
+    left: 50%;
+    margin-left: -45vw;
+    /* Look */
     background: white;
     border-radius: 5px;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);

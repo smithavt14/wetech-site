@@ -77,7 +77,7 @@
 <circle id="svg-circle-2" cx="375" cy="249" r="16" fill="#6C63FF" fill-opacity="0.4"/>
 
 <animate 
-xlink:href="#svg-circle-1"
+href="#svg-circle-1"
 attributeName="cy"
 from="241"
 to="241" 
@@ -90,7 +90,7 @@ fill="freeze"
 d="circ-anim" />
 
 <animate 
-xlink:href="#svg-circle-2"
+href="#svg-circle-2"
 attributeName="cy"
 from="249"
 to="249"
