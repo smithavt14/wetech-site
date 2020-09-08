@@ -1,10 +1,47 @@
-.bannerContainer {
+.pageContainer {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.sectionContainer {
+    min-height: 100vh;
+    max-width: 1440px;
+    padding: 80px 5%;
+    position: relative;
     box-sizing: border-box;
 }
 
-.bannerContainer {
+.container {
+    margin-top: 80px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* ----- Backgrounds ----- */
+
+.background {
+    height: 110vh;
+    width: 100vw;
+    position: absolute;
+}
+
+.backgroundDots {
     background: linear-gradient(180deg, rgba(255, 255, 255, 0) 80%, #FFFFFF 100%), url('../assets/images/purple-dot-32.svg');
-    min-height: 110vh;
+    top: 0;
+    left: 0;
+}
+
+.backgroundGreen {
+    background: linear-gradient(180deg, rgba(227, 246, 245, 0.25) 0%, rgba(227, 246, 245, 0) 100%);
+    margin: 80px;
+}
+
+.backgroundPurple {
+    background: linear-gradient(180deg, rgba(108, 99, 255, 0.0625) 0%, rgba(227, 246, 245, 0) 100%);
+    margin: 80px;
 }
 
 .logoContainer {
@@ -14,31 +51,17 @@
     padding: 120px 0;
 }
 
-.container {
-    padding: 0 80px;
-    max-width: 1440px;
-}
-
-.sectionContainer {
-    background: linear-gradient(180deg, rgba(227, 246, 245, 0.25) 0%, rgba(227, 246, 245, 0) 100%);
-    position: relative;
-    min-height: 100vh;
-    padding: 80px;
-    box-sizing: border-box;
-    text-align: center;
-}
-
 .sectionContainer h2 {
     margin-bottom: 32px;
 }
 
-.purpleAccent {
+.accentPurple {
     position: absolute;
     top: 0;
     right: -32px;
 }
 
-.servicesContainer {
+.services {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 16px;
@@ -46,7 +69,7 @@
     margin-top: 32px;
 }
 
-.serviceContainer {
+.service {
     height: 240px;
     flex-grow: 1;
     padding: 32px;
@@ -54,28 +77,23 @@
     text-align: left;
 }
 
-.serviceFlex {
-    display: flex;
-    height: 32px;
-    align-items: center;
-    margin-bottom: 24px;
-}
-
-.serviceContainer h3 {
-    margin: 0;
+.service h3 {
     margin-left: 32px;
 }
 
-.serviceIcon {
-    width: 32px;
-}
-
-.servicesContainer p {
+.service p {
     margin-left: 64px;
     opacity: 80%;
+}
+
+.service svg {
+    width: 32px;
 }
 
 .creationSVG {
     height: 480px;
     width: auto;
+    position: absolute;
+    top: -32px;
+    right: -32px;
 }

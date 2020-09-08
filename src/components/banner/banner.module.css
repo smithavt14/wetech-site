@@ -13,8 +13,8 @@
     src: url('../../assets/fonts/Lato-Bold.ttf');
 }
 
-.banner {
-    height: 110vh;
+.container {
+    margin-top: 80px;
     box-sizing: border-box;
     display: flex;
     align-items: center;
@@ -50,9 +50,4 @@
     transform: scale(1.05);
     -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
     transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
-}
-
-.bannerImg {
-    width: 40%;
-    flex-shrink: 0;
 }
