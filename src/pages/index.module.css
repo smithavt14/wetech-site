@@ -61,6 +61,12 @@
     right: -32px;
 }
 
+.accentPurple2 {
+    position: absolute;
+    top: -32px;
+    left: 0;
+}
+
 .services {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -91,9 +97,48 @@
 }
 
 .creationSVG {
-    height: 480px;
+    height: 40%;
     width: auto;
     position: absolute;
-    top: -32px;
-    right: -32px;
+    top: -24%;
+    right: 0px;
+}
+
+.project {
+    height: 240px;
+    flex-grow: 1;
+    padding: 32px;
+    display: flex;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+.project img {
+    height: 100%;
+
+}
+
+.footer {
+    width: 100vw;
+    height: 200px;
+    background-color: #FAFDFF;
+    box-sizing: border-box;
+}
+
+.footerContainer {
+    max-width: 1440px;
+    padding: 32px 5%;
+    margin: 0 auto;
+}
+
+.footerLine {
+    height: 1px;
+    background: #272343;
+    opacity: .40;
+    margin: 16px 0;
+}
+
+.footer img {
+    height: 120px;
+    width: 120px;
 }

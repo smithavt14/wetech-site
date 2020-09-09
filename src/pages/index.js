@@ -14,14 +14,15 @@ import Lewagon from "../assets/vectors/client-lewagon.svg";
 import Move from "../assets/vectors/client-move.svg";
 import Wiredcraft from "../assets/vectors/client-wiredcraft.svg";
 import BannerVector from "../assets/vectors/banner-img.svg";
+
 import Purple from "../assets/vectors/accent-purple.svg";
+import Purple2 from "../assets/vectors/accent-purple-2.svg";
+
 import Development from "../assets/vectors/service-development.svg";
 import Strategy from "../assets/vectors/service-strategy.svg";
 import Training from "../assets/vectors/service-training.svg";
 import Wechat from "../assets/vectors/service-wechat.svg";
 import Creation from "../assets/vectors/creation.svg";
-
-import { render } from "react-dom";
 
 export default function Home () {
   const services = [
@@ -29,6 +30,13 @@ export default function Home () {
     {icon: Development, title: 'Websites & WebApps', description: 'Localize your website’s design and deploy it on Chinese servers making it fast, easy, and attractive to your target audience.'},
     {icon: Strategy, title: 'Digital Strategy', description: 'It can be difficult for foreign businesses to succeed in China. We help you make sense of the digital landscape and create a plan which leverages local assets to achieve your business objectives.'},
     {icon: Training, title: 'Technical Training', description: 'Curious about how it all works? We know, we’ve been there. We work with your team to demystify technology and make it a tool for success, rather than a barrier. '}
+  ]
+
+  const projects = [
+    {title: 'Le Wagon Events', description: 'An external event registration platform allowing users to view and signup for activities across multiple cities.', img: '/phone-1.png'},
+    {title: 'Space Stories', description: 'A Science Fiction short story reader that allows users to select from a database of over 260 stories or have a story randomly generated for them. ', img: '/phone-2.png'},
+    {title: 'Dianda (电达)', description: 'A logistics supply application that allows users to order delivery services from a fleet of electric-only vehicles.', img: '/phone-3.png'},
+    {title: 'Move SH', description: 'A membership platform that provides users to activitites in over 200+ venues in Shanghai. Users can register and pay for activities in the application.', img: '/phone-4.png'}
   ]
 
   return (
@@ -86,6 +94,40 @@ export default function Home () {
 
       <div className={cx(style.sectionContainer, style.backgroundPurple)}>
         <Creation className={style.creationSVG}/>
+        <Purple2 className={style.accentPurple2}></Purple2>
+
+        <div style={{textAlign: 'center'}}>
+          <h4>Our Projects</h4>
+          <h2>What We've Done.</h2>
+          <p>We've made some killer apps for both our clients and ourselves.</p>
+        </div>
+
+        <div className={style.services}>
+          {projects.map((item, i) => (
+            <div className={style.project} key={i}>
+              <div className={cx('mb-3')}>
+                <h3>{item.title}</h3>
+                <p>{item.description}</p>
+              </div>
+              <img src={item.img}/>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <div className={style.footer}>
+        <div className={style.footerContainer}>
+          <div className={cx('d-flex', 'align-items-center', 'justify-content-center')}>
+            <h2 className={cx('mr-5')}>Say Hello.</h2>
+            <img className={cx('ml-5')} src="/qr.jpg"/>
+          </div>
+          <div className={style.footerLine}></div>
+          <div className={cx('d-flex', 'justify-content-between')}>
+            <div><p>© 2020 ZIMA DIGITAL</p></div>
+            <div><p>alex@zimadigital.io</p></div>
+          </div>
+        </div>
+        
       </div>
 
     </div>
